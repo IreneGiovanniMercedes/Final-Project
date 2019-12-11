@@ -36,7 +36,7 @@ void loop()
     radio.read(&myBPM, sizeof(myBPM));
     Serial.println(myBPM);
 
-    if (myBPM > 75) {
+    if (myBPM > 200) {
       digitalWrite (7, HIGH);
     } else {
       digitalWrite (7, LOW);
