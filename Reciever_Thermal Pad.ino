@@ -9,7 +9,7 @@ RF24 radio(9, 8);  // CE, CSN
 //address through which two modules communicate.
 const byte address[15] = "00001";
 
-int HeatPad = 7;
+int HeatPad = 6;
 
 void setup()
 {
@@ -37,9 +37,9 @@ void loop()
     Serial.println(myBPM);
 
     if (myBPM > 200) {
-      digitalWrite (7, HIGH);
+      digitalWrite (6, HIGH);
     } else {
-      digitalWrite (7, LOW);
+      digitalWrite (6, LOW);
     }
   }
 }
